@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Temp\\Create Date Dimension\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AD9F257C-261F-3156-FD65-75BFCB8F35AF}|Create Date Dimension\\Create Date Dimension.dwproj|C:\\Temp\\Create Date Dimension\\Create Date Dimension\\DimDate.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{AD9F257C-261F-3156-FD65-75BFCB8F35AF}|Create Date Dimension\\Create Date Dimension.dwproj|solutionrelative:Create Date Dimension\\DimDate.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DimDate.dim [Design]",
+              "DocumentMoniker": "C:\\Temp\\Create Date Dimension\\Create Date Dimension\\DimDate.dim",
+              "RelativeDocumentMoniker": "Create Date Dimension\\DimDate.dim",
+              "ToolTip": "C:\\Temp\\Create Date Dimension\\Create Date Dimension\\DimDate.dim [Design]",
+              "RelativeToolTip": "Create Date Dimension\\DimDate.dim [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-09T20:05:06.973Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
