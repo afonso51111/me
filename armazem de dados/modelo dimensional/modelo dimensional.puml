@@ -1,0 +1,97 @@
+@startuml
+
+!theme plain
+hide circle
+skinparam linetype ortho
+
+' --- DIMENSÕES (Tabelas de Pesquisa) ---
+
+entity "DimDate" as dim_date  {
+  *DateKey : int <<PK>>
+  --
+  FullDate : date
+  Year : int
+  Semester : tinyint
+  Quarter : tinyint
+  Month : tinyint
+  MonthName : nvarchar
+  Week: tinyint
+  DayNumberOfYear: int
+  DayNumberOfMonth: tinyint
+  DayNumberOfWeek: tinyint
+  DayOfWeek : nvarchar
+  Weekend : nvarchar
+}
+
+entity "DimProduct" as dim_product  {
+  *ProductKey : int <<PK>> 
+  --
+Code: char
+Description: char
+FamilyCode: int
+Stock: numeric
+UnitPrice: numeric
+OrderPoint: numeric
+MinimunStock: numeric
+StartSellingDate: date 
+Category: varchar 
+EffectiveDate datetime
+ExpiredDate datetime 
+}
+
+entity "DimCustomer" as dim_customer  {
+  *CustomerKey : int <<PK>> (Surrogate Key)
+  --
+  CustomerNumber: numeric
+TaxpayerNumber: varchar
+Fax: varchar
+CustomerName: varchar
+CustomerType: int 
+Address: varchar
+City: varchar
+Phone: varchar
+ZipCode: varchar
+Email: varchar
+Location: varchar
+Contact: varchar
+EffectiveDate: datetime 
+ExpiredDate: datetime 
+ }
+
+entity "DimEmployee" as dim_employee  {
+  *EmployeeKey : int <<PK>> (Surrogate Key)
+  --
+ Number: numeric
+Initials: varchar
+Code: varchar
+Forename: varchar
+Surname: varchar
+Group:archar
+Department: int
+Email: varchar
+EffectiveDate: datetime 
+ExpiredDate: datetime
+}
+
+' --- FACTOS (Tabela Central) ---
+
+entity "FactSales" as fact_sales  {
+  *SalesFactKey : int <<PK>>
+  -- Foreign Keys --
+  DateKey : int <<FK>>
+  ProductKey : int <<FK>>
+  CustomerKey : int <<FK>>
+  EmployeeKey : int <<FK>>
+   TransactionID: char
+   Quantity: int
+   Amount: money 
+  }
+
+' --- RELAÇÕES ---
+
+dim_date ||..|{ fact_sales
+dim_product ||..|{ fact_sales
+dim_customer ||..|{ fact_sales
+dim_employee ||..|{ fact_sales
+
+@enduml
