@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>TrabPrat</Name>
-    <LastWriteTime>2026-01-09T20:34:02.4167049Z</LastWriteTime>
+    <LastWriteTime>2026-01-15T21:54:23.2913469Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Data Mart ETL Package.dtsx</Name>
-      <LastWriteTime>2026-01-11T02:39:10.6529954Z</LastWriteTime>
+      <LastWriteTime>2026-01-16T02:05:28.7346454Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
